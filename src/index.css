@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --aws-blue: #232f3e;
+  --aws-orange: #ff9900;
+  --aws-purple: #8c4fff;
+  --aws-light-blue: #0073bb;
+}
+
+body {
+  @apply bg-[#f8f9fa];
+}
+
+/* Custom scrollbar for the cards container */
+.cards-container::-webkit-scrollbar {
+  width: 6px;
+}
+
+.cards-container::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 3px;
+}
+
+.cards-container::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 3px;
+}
+
+.cards-container::-webkit-scrollbar-thumb:hover {
+  background: #666;
+}
